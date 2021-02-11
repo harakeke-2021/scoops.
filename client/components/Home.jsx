@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Flavours from './Flavours'
-import ConesCups from './ConesCups'
+import Cones from './Cone'
 import Toppings from './Toppings'
 
 function Home () {
@@ -12,7 +12,7 @@ function Home () {
     <div className='home'>
       <div className='categories'>
         <Flavours />
-        <ConesCups />
+        <Cones/>
         <Toppings />
       </div>
       <Link>
