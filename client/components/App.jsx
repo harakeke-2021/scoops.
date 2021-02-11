@@ -1,10 +1,13 @@
 import React from 'react'
 
+import Home from './Home'
+
 const App = () => {
   return (
-    <>
-      <h1>hello world!</h1>
-    </>
+    <div className='app'>
+      <Home />
+    </div>
+
   )
 }
 
