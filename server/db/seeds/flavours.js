@@ -22,7 +22,7 @@ exports.seed = function (knex) {
     {
       id: 4,
       name: 'Lemon Lime',
-      description: 'Lemon flavoured with a lime ripple.',
+      description: 'Lemon soybay flavoured with a lime ripple.',
       price: 3
     },
     {
@@ -30,7 +30,36 @@ exports.seed = function (knex) {
       name: 'Mango',
       description: 'Mango flavoured frozen yoghurt with a mango ripple.',
       price: 3
+    },
+    {
+      id: 5,
+      name: 'Mint Choc',
+      description: 'Mint flavoured frozen ice cream with a mango ripple.',
+      price: 3
+    },
+    {
+      id: 5,
+      name: 'Raspberry',
+      description: 'Raspberry flavoured frozen ice cream.',
+      price: 3
+    },
+    {
+      id: 6,
+      name: 'Rum raisin',
+      description: 'Rum flavoured frozen ice cream with dipped raisins.',
+      price: 3
+    },
+    {
+      id: 6,
+      name: 'Strawberry',
+      description: 'A summer fav frozen ice cream made with fresh strawberry.',
+      price: 3
+    },
+    {
+      id: 7,
+      name: 'Vanilla',
+      description: 'A New Zealand classic flavoure we all know and love, the taste of summer and birthdays.',
+      price: 3
     }
-
   ])
 }
