@@ -1,28 +1,33 @@
 import request from 'superagent'
 
-export function getFlavours () {
+export function getAll () {
   return request.get('/api/v1/ice-cream')
-    .then((res) => {
-      return res.body.filter((product) => {
-        return product.category === 'flavours'
-      })
-    })
+  .then(res => {
+    const all = res.body
+    return {
+      flavours: getFlavours(all),
+      toppings: getToppings(all),
+      cones: getCones(all)
+    }
+  })
 }
 
-export function getToppings () {
-  return request.get('/api/v1/ice-cream')
-    .then((res) => {
-      return res.body.filter((product) => {
-        return product.category === 'toppings'
-      })
-    })
+
+function getFlavours (all) {
+  return all.filter((product) => {
+    return product.category === 'flavours'
+  })
 }
 
-export function getCones () {
-  return request.get('/api/v1/ice-cream')
-    .then((res) => {
-      return res.body.filter((product) => {
-        return product.category === 'cones'
-      })
-    })
+function getTOppings (all) {
+  return all.filter((product) => {
+    return product.category === 'toppings'
+  })
+}
+
+
+function getFlavours(all) {
+  return all.filter((product) => {
+    return product.category === 'cones'
+  })
 }
