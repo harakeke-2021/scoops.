@@ -1,32 +1,10 @@
-export const SET_FLAVOUR = 'SET_FLAVOUR'
-export const SET_CONE = 'SET_CONE'
-export const SET_TOPPING = 'SET_TOPPING'
+export const SET_ICECREAM = 'SET_ICECREAM'
 
-export function setFlavour (flavour) {
+export function setIcecream(newIcecream) {
   return (dispatch) => {
     dispatch({
-      type: SET_FLAVOUR,
-      flavour: flavour
-    })
-    return null
-  }
-}
-
-export function setCone (cone) {
-  return (dispatch) => {
-    dispatch({
-      type: SET_CONE,
-      cone: cone
-    })
-    return null
-  }
-}
-
-export function setTopping (topping) {
-  return (dispatch) => {
-    dispatch({
-      type: SET_TOPPING,
-      topping: topping
+      type: SET_ICECREAM,
+      icecream: newIcecream
     })
     return null
   }

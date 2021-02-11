@@ -1,12 +1,15 @@
 import {
-  SET_FLAVOUR,
-  SET_CONE,
-  SET_TOPPING
+  SET_ICECREAM
 } from '../actions'
 
 function icecream (state = [], action) {
   switch (action.type) {
-    case SET_FLAVOUR:
-      return [...state, action.flavour]
+    case SET_ICECREAM:
+      return [...state, action.icecream]
+
+    default:
+      return state
   }
 }
+
+export default icecream
