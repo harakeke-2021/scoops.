@@ -1,5 +1,8 @@
 import React from 'react'
-const flavours = ['chocolate', 'chocolate', 'chocolate', 'chocolate', 'chocolate', 'chocolate', 'chocolate']
+
+import { getFlavours } from '../api'
+
+const flavours = getFlavours
 
 function Flavour () {
   return (
@@ -7,7 +10,7 @@ function Flavour () {
       <h1>Flavours.</h1>
       <ul>
         {flavours.map(flavour => {
-          return <li key={flavour}>{flavour}</li>
+          return <li key={flavour.id}><button>{flavour.name}</button></li>
         })}
       </ul>
     </div>
