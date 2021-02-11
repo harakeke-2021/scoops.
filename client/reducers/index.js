@@ -1,8 +1,7 @@
 import { combineReducers } from 'redux'
 
-import iceCream from './iceCream'
-
+import icecream from './icecream'
 
 export default combineReducers({
-  iceCream
+  icecream
 })
