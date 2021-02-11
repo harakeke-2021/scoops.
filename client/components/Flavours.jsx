@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { getFlavours } from '../api'
 
-const flavours = getFlavours
+const [flavours, setFlavours] = useState('')
+
+
 
 function Flavour () {
   return (
