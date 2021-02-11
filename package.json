@@ -43,8 +43,10 @@
     "express": "^4.17.1",
     "framer-motion": "^3.3.0",
     "knex": "^0.21.17",
-    "react-thunk": "^1.0.0",
-    "sqlite3": "^5.0.0"
+    "headary": "2.0.0",
+    "sqlite3": "^5.0.0",
+    "superagent": "^6.1.0"
+
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
