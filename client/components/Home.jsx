@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import Flavours from './Flavours'
-import Cones from './Cone'
+import Cones from './Cones'
 import Toppings from './Toppings'
 
 function Home () {
@@ -35,9 +35,6 @@ function Home () {
 
         <button onClick={toggleToppings}>Toppings</button>
         {showToppings && <Toppings /> }
-
-        {/* <Cones/>
-        <Toppings /> */}
       </div>
       <Link to='/'>
       Create my Ice Cream
