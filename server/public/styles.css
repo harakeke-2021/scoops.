@@ -1,0 +1,23 @@
+body {
+  background-color: #faf3e0;
+}
+
+h1 {
+  color: #1e212d;
+  font-size: 100px;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.categories button {
+  text-align: center;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* div .categories {
+  display: inline-block
+} */
