@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react'
+import { connect } from 'react-redux'
+import { fetchFlavours } from '../actions/index'
 
-import { getFlavours } from '../api'
-
-const [flavours, setFlavours] = useState('')
-
-
-
-function Flavour () {
+function Flavours (props) {
+  useEffect(() => {
+    props.dispatch(fetchFlavours())
+  }, [])
+  console.log(props.flavours)
+  // const [flavours, setFlavours] = useState('')
   return (
     <div>
       <h1>Flavours.</h1>
       <ul>
-        {flavours.map(flavour => {
+        {props.flavours.map(flavour => {
           return <li key={flavour.id}><button>{flavour.name}</button></li>
         })}
       </ul>
@@ -19,4 +20,10 @@ function Flavour () {
   )
 }
 
-export default Flavour
+function mapStateToProps (state) {
+  return {
+    flavours: state.flavours
+  }
+}
+
+export default connect(mapStateToProps)(Flavours)
