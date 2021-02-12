@@ -3,8 +3,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Flavours from './Flavours'
-import Cones from './Cone'
-import Toppings from './Toppings'
+import Cones from './Cones'
+// import Toppings from './Toppings'
 
 function Home () {
   return (
@@ -12,8 +12,8 @@ function Home () {
     <div className='home'>
       <div className='categories'>
         <Flavours />
-        {/* <Cones/>
-        <Toppings /> */}
+        <Cones/>
+        {/* <Toppings /> */}
       </div>
       <Link to='/'>
       Create my Ice Cream
