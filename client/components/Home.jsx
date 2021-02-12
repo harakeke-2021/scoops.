@@ -12,12 +12,13 @@ function Home () {
     <div className='home'>
       <div className='categories'>
         <Flavours />
-        <Cones/>
-        <Toppings />
+        {/* <Cones/>
+        <Toppings /> */}
       </div>
-      <Link>
+      <Link to='/'>
       Create my Ice Cream
       </Link>
+
     </div>
   )
 }
