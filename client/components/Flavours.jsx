@@ -6,13 +6,23 @@ function Flavours (props) {
   useEffect(() => {
     props.dispatch(fetchFlavours())
   }, [])
-  console.log(props.flavours)
-  // const [flavours, setFlavours] = useState('')
+
+  // const [flavour, setFlavour] = useState('')
+
+  // function handleClick (value) {
+  //   setFlavour(value)
+  // }
+
+
   return (
     <div>
+      {/* <img src="images/hazelnut.png" alt='hello'/> */}
       <ul>
         {props.flavours.map(flavour => {
-          return <li key={flavour.id}><button>{flavour.name}</button></li>
+          console.log(flavour.image)
+          return <li key={flavour.id}>
+            <div onClick={(value) => handleClick(value)} value={flavour.name}>
+              <img src={flavour.image} alt={flavour.name}/> {flavour.name}</div></li>
         })}
       </ul>
     </div>
