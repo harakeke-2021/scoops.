@@ -9,7 +9,6 @@ function Cones ({ cones, dispatch }) {
 
   return (
     <div>
-      <h1>Cones</h1>
       <ul>
         {
           cones.map(cone => (

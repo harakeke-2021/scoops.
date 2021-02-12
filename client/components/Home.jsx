@@ -26,6 +26,7 @@ function Home () {
   return (
 
     <div className='home'>
+      <h1>Scoops.</h1>
       <div className='categories'>
         <button onClick={toggleCones}>Cones</button>
         {showCones && <Cones /> }

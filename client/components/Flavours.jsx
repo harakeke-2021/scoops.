@@ -10,7 +10,6 @@ function Flavours (props) {
   // const [flavours, setFlavours] = useState('')
   return (
     <div>
-      <h1>Flavours.</h1>
       <ul>
         {props.flavours.map(flavour => {
           return <li key={flavour.id}><button>{flavour.name}</button></li>

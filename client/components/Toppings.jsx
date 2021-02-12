@@ -10,7 +10,6 @@ function Flavours (props) {
   // const [flavours, setFlavours] = useState('')
   return (
     <div>
-      <h1>Flavours.</h1>
       <ul>
         {props.toppings.map(topping => {
           return <li key={topping.id}><button>{topping.name}</button></li>
