@@ -15,3 +15,15 @@ router.get('/', (req, res) => {
       res.sendStatus(500)
     })
 })
+
+router.post('/', (req, res) => {
+  db.postOrder()
+    .then((result) => {
+      res.json(result)
+      return null
+    })
+    .catch((err) => {
+      console.error(err)
+      res.sendStatus(500)
+    })
+})
