@@ -21,3 +21,9 @@ ul {
 /* div .categories {
   display: inline-block
 } */
+
+.container-flavour {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

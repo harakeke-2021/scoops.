@@ -13,11 +13,10 @@ function Flavours (props) {
   //   setFlavour(value)
   // }
 
-
   return (
     <div>
       {/* <img src="images/hazelnut.png" alt='hello'/> */}
-      <ul>
+      <ul className='container-flavour'>
         {props.flavours.map(flavour => {
           console.log(flavour.image)
           return <li key={flavour.id}>
