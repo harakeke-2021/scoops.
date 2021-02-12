@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux'
 
-import icecream from './icecream'
+import icecream from './iceCream'
 // import products from './products'
 import flavours from './flavours'
 import cones from './cones'
